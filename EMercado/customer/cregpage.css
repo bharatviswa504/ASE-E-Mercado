@@ -1,0 +1,114 @@
+﻿*{
+	margin:0px;
+	padding:0px;
+	}
+body{
+	font-family:Tahoma, Geneva, sans-serif;
+	}
+#c{
+	width:600px;
+	background-color:rgba(250,250,252,.9);
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow:0 0 3px #999;
+	}
+#c_body{
+	padding:20px;
+	}
+.form_title{
+	font-size:25px;
+	color:#85FF5C;
+	text-align:center;
+	padding:10px;
+	font-weight:normal;
+	}
+.head_para{
+	font-size:18px;
+	color:#99a2a7;
+	text-align:center;
+	font-weight:normal;
+	}
+#form_name{
+	padding:25px 0 0 15px;
+	}
+.firstname{
+	 margin-right:20px;
+	}
+.ip_username{
+	width:440px;
+	padding:5px;
+	font-size:18px;
+	}
+#password_form{
+	padding:10px 0 10px 0px;
+	}
+.ip_password{
+	width:440px;
+	padding:5px;
+	font-size:18px;
+	}
+#name_form{
+   padding:10px 0 10px 0px;
+}	
+.ip_name{
+    width:440px;
+	padding:5px;
+	font-size:18px;
+}	
+#age_form{
+   padding:10px 0 10px 0px;
+}	
+.ip_age{
+    width:440px;
+	padding:5px;
+	font-size:18px;
+}	
+#gender_form{
+	padding:10px 0 0 0;
+	}
+	#address1_form{
+   padding:10px 0 10px 0px;
+}	
+.ip_address1{
+    width:440px;
+	padding:5px;
+	font-size:18px;
+}		
+#address2_form{
+   padding:10px 0 10px 0px;
+}	
+.ip_address2{
+    width:440px;
+	padding:5px;
+	font-size:18px;
+}			
+#email_form{
+	clear:both;
+	padding:15px 0 10px 0px;
+	}
+.ip_email{
+	width:440px;
+	padding:5px;
+	font-size:18px;
+	}
+#phone_form{
+   padding:10px 0 10px 0px;
+}	
+.ip_phone{
+    width:440px;
+	padding:5px;
+	font-size:18px;
+}	
+#register_customer{
+	font-size:18px;
+	color:#FFF;
+	text-align:center;
+	background-color:#33CCCC;
+	padding:10px;
+	margin-top:10px;
+	cursor: pointer;
+	}
+#displayerror{
+	color:#F00;
+	}

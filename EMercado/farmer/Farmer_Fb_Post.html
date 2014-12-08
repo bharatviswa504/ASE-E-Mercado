@@ -1,0 +1,132 @@
+<html>
+
+ 
+ <head runat="server">
+    <title>Search markets</title>
+  
+  <style type="text/css">
+ header{
+background-color:black;
+color:white;
+text-align:center;
+padding:5px; 
+}
+#h1
+{
+background-color:black;
+color:white;
+clear:both;
+text-align:center;
+padding: 10px;
+position:absolute;
+   bottom:0;
+   width:100%; 
+}
+        #tb1 {
+	font-family: verdana,arial,sans-serif;
+	font-size:13px;
+	color:#333333;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+#tb1 th {
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+
+nav {
+line-height:30px;
+background-color:#9C8888;
+height:440px;
+width:275px;
+float:left;
+padding:5px; 
+}
+section {
+width:550px;
+float: left;
+padding:10px; 
+}
+
+footer 
+{
+background-color:black;
+color:white;
+clear:both;
+text-align:center;
+padding: 10px;
+position:absolute;
+   bottom:0;
+   width:100%; 
+}
+#outputdiv
+{
+    position:fixed;
+    overflow: auto; 
+    width: auto;  
+    height: auto;  
+    background-color: #0156c0;  
+    color: white;  
+    FONT-SIZE: .8em;  
+    margin: 0px 0px 0px 0px;  
+    padding: 5px;  
+      
+}
+</style>
+<script>
+	function postfb() {
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  appId      : '1525978530974428',
+			  xfbml      : true,
+			  version    : 'v2.1'
+			});
+    /*
+			FB.getLoginStatus(function(response) {
+	  if (response.status === 'connected') {
+		console.log('Logged in.');
+	  }
+	  else {
+		FB.login();
+	  }
+	});
+    */
+			FB.ui({
+     method: 'share_open_graph',
+     action_type: 'og.likes',
+     action_properties: JSON.stringify({
+      object:'https://developers.facebook.com/docs/',
+     })
+    }, function(response){});
+		  };
+
+		  (function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		 }
+
+    </script>
+	<body>
+    <header>
+  <h1>Share In Facebook</h1> 
+   </header>
+   <nav>
+   <br />
+   <br />
+   <h3 align="center">Share In facebook</h3>
+   <p>Share the Updates in facebook .So that users will be updated with latest information about the items availability</p>
+   </nav>
+    <p align="center">
+    <img src="../images/FB_LOGO.png" width="600" height="400" />
+    
+	<button id="b1" onclick="postfb()">Click Here to Post in Facebook</button></p>
+    <footer>
+   Copyright © EMercado.com
+   </footer>
+    </body>
+	</html>
